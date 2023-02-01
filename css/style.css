@@ -44,6 +44,14 @@ li {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .parallax-bg-low {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px;
+  }
   /*各背景の画像*/
   .img-bg-01 {
     background-image: url(../img/bg/aniv.png);
@@ -191,9 +199,7 @@ li {
 レイアウト
 ----------*/
 
-.content {
-    
-}  
+
 
 .section {
     padding: 80px 0;
@@ -399,17 +405,6 @@ flex-wrap: wrap;
     color: #333;
 }
 
-.works-item:hover {
-    /**/
-}
-
-.works-item:nth-of-type(3n) {
-    /*margin-right: 0;*/
-}
-
-.works-img img {
-
-}
 
 .works-info {
     font-size: 0.7em;
@@ -534,19 +529,27 @@ Contact
     padding: 80px 0;
 }
 
-.article-mondo {
-    background-image: url(../img/bg/mondobg.png);
-    padding: 80px 0;
+.img-bg-mondo {
+    background-image: url(../img/bg/mondoss.png);
 }
 
-.article-liyue {
-    background-position: -500px;;
-    background-image: url(../img/bg/liyuebg.png);
-    padding: 80px 0;
+.img-bg-liyue {
+    background-image: url(../img/bg/liyuess.png);
+}
+
+.img-bg-inazuma {
+    background-image: url(../img/bg/inazumass.png);
+}
+
+.img-bg-sumeru{
+    background-image: url(../img/bg/sumeruss.png);
+}
+
+.img-bg-quote{
+    background-image: url(../img/bg/mondobg.png);
 }
 
 .article-inner {
-    max-width: 1040px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -566,7 +569,7 @@ Contact
     1px -1px 0 #000,
     -1px -1px 0 #000;
     
-    color: rgb(0, 255, 64);
+    color: rgb(0, 255, 76);
 }
 
 .article-title02 {
@@ -582,14 +585,45 @@ Contact
     color: rgb(255, 136, 0);
 }
 
-.article-chara{
+.article-title03 {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 3em;
     
+    text-shadow: 1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+    
+    color: rgb(212, 0, 255);
+}
+
+.article-title04 {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 3em;
+    
+    text-shadow: 1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+    
+    color: rgb(26, 255, 0);
 }
 
 .article-img {
 	margin-bottom: 20px;
     margin-right: 100px;
 }
+
+.article-photo{
+    display: flex;
+}
+
+.article-photo li:not(:last-child){
+    margin-right: 20px;
+}
+
 
 .article-body {
 	max-width: 720px;
@@ -598,6 +632,7 @@ Contact
 }
 
 .article-info-title {
+    color: #333;
 	font-size: 15px;
 }
 
@@ -605,18 +640,27 @@ Contact
 	margin-bottom: 30px;
 }
 
+.article-text{
+    color:#f3f3f3;
+}
+
+.fade-bg{
+    background-color: rgba(51, 51, 51, 0.4);
+}
+
 .article-body p {
 	margin-bottom: 30px;
 }
 
 .home-link {
+    background-color: rgba(51, 51, 51, 0.4);
 	text-align: center;
 }
 
 /*---
 media Queriese 767
 ---*/
-
+/* 
 @media screen and (max-width: 767px) {
 	body {
 		font-size: 13px;
@@ -631,14 +675,14 @@ media Queriese 767
 		display: block;
 	}
 	
-	/*見出し*/
+	
 	
 	.title {
 		font-size: 26px;
 		margin-bottom: 20px;
 	}	
 	
-	/*レイアウト*/
+	
 	.section {
 		padding: 60px 0;
 	}
@@ -647,7 +691,7 @@ media Queriese 767
 		padding: 0 20px;
 	}
 	
-	/*ヘッダー*/
+	
 	.header-inner {
 		padding: 20px;
 	}
@@ -664,10 +708,8 @@ media Queriese 767
 		font-size: 11px;
 	}
 	
-	/*スプリットスクリーン*/
 	.split {
 		flex-direction: column-reverse;
-		/*flex-direction: column;*/
 	}
 	
 	.split-body {
@@ -687,7 +729,6 @@ media Queriese 767
 		font-size: 32px;
 	}
 	
-	/*Works*/
 	.works-name {
 		font-size: 10px;
         color: rgb(255, 255, 0);
@@ -704,7 +745,6 @@ media Queriese 767
 	}
 	
 	
-	/*Skill*/
 	.skill-list {
 		display: block;
 	}
@@ -718,10 +758,10 @@ media Queriese 767
 		margin-bottom: 0;
 	}
 	
-	/*フッター*/
 	.footer {
 		padding: 20px;
-	}
+	} 
+    */
 	
 	
 	
