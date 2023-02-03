@@ -468,6 +468,7 @@ Skill
     color: #f3f3f3;
 }
 .skill-text{
+    width: 100px;
     color: #f3f3f3;
 }
 
@@ -538,7 +539,7 @@ Contact
 }
 
 .img-bg-inazuma {
-    background-image: url(../img/bg/inazumass.png);
+    background-image: url(../img/SScontent/InazumaAyaka.png);
 }
 
 .img-bg-sumeru{
@@ -560,7 +561,7 @@ Contact
 }/**/
 
 .article-title01 {
-    margin-bottom: 20px;
+    margin-bottom: 980px;
     text-align: left;
     font-size: 3em;
 
@@ -573,7 +574,7 @@ Contact
 }
 
 .article-title02 {
-    margin-bottom: 20px;
+    margin-bottom: 980px;
     text-align: left;
     font-size: 3em;
     
@@ -586,7 +587,7 @@ Contact
 }
 
 .article-title03 {
-    margin-bottom: 20px;
+    margin-bottom: 980px;
     text-align: left;
     font-size: 3em;
     
@@ -599,7 +600,7 @@ Contact
 }
 
 .article-title04 {
-    margin-bottom: 20px;
+    margin-bottom: 980px;
     text-align: left;
     font-size: 3em;
     
@@ -616,17 +617,20 @@ Contact
     margin-right: 100px;
 }
 
-.article-photo{
-    display: flex;
+
+.article-photo li{
+    justify-content: center;
+    color: #f3f3f3;
 }
 
-.article-photo li:not(:last-child){
-    margin-right: 20px;
+.article-photo li p{
+    display: flex;
+    justify-content: center;
 }
 
 
 .article-body {
-	max-width: 720px;
+	max-width: 1080px;
 	margin: 0 auto;
 	margin-bottom: 80px;
 }
@@ -637,7 +641,12 @@ Contact
 }
 
 .article-body img {
-	margin-bottom: 30px;
+	margin-bottom: 0px;
+}
+
+.article-text-title{
+    color:#f3f3f3;
+    font-size: 3em;
 }
 
 .article-text{
@@ -649,13 +658,15 @@ Contact
 }
 
 .article-body p {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .home-link {
     background-color: rgba(51, 51, 51, 0.4);
 	text-align: center;
 }
+
+
 
 /*---
 media Queriese 767
@@ -762,6 +773,7 @@ media Queriese 767
 		padding: 20px;
 	} 
     */
+
 	
 	
 	
@@ -787,8 +799,7 @@ media Queriese 767
 	
 	
 	
-	
-}
+
 	
 
 
